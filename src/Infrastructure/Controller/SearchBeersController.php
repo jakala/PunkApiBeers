@@ -4,17 +4,24 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\Controller;
 
+use App\Application\Handler\SearchBeersHandler;
+use App\Application\Service\CreateFoodQueryFromRequest;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 final class SearchBeersController
 {
+    public function __construct(
+        private CreateFoodQueryFromRequest $createFoodQueryFromRequest,
+        private SearchBeersHandler $searchBeers
+    ) {
+    }
+
     public function __invoke(Request $request): JsonResponse
     {
-        $list = [
-            ['id' => 1, 'name' => 'Cruzcampo', 'description' => 'una cerveza cruzcampo...'],
-            ['id' => 1, 'name' => 'Amstel', 'Description' => 'Amigo Mio Solo Tu Encuentras Leña'],
-        ];
+        $command = $this->createFoodQueryFromRequest->__invoke($request);
+
+        $list = $this->searchBeers->__invoke($command);
 
         return new JsonResponse($list);
     }

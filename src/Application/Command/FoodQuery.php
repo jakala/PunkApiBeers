@@ -8,11 +8,11 @@ use App\Domain\ValueObject\Food;
 
 final class FoodQuery
 {
-    public function __construct(private Food $food)
+    public function __construct(private ?Food $food)
     {
     }
 
-    public function food(): Food
+    public function food(): ?Food
     {
         return $this->food;
     }

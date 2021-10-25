@@ -2,7 +2,9 @@
 
 namespace App\Domain\Interface;
 
-interface BeerRepository
+use App\Application\Command\FoodQuery;
+
+interface BeersRepository
 {
     public function searchByCriteria(FoodQuery $query): array;
 }
