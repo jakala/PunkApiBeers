@@ -21,9 +21,9 @@ final class CreateBeerDetailFromResult
             new Id($result['id']),
             new Name($result['name']),
             new Description($result['description']),
-            new Image($result['image']),
+            new Image($result['image_url']),
             new Tagline($result['tagline']),
-            FirstBrewed::createFromString($result['first-brewed'])
+            FirstBrewed::createFromString($result['first_brewed'])
         );
 
         return new BeerDetail($beer);

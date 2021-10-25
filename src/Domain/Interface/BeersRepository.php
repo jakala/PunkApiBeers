@@ -7,7 +7,7 @@ use App\Application\Command\IdQuery;
 
 interface BeersRepository
 {
-    public function searchByCriteria(FoodQuery $query): array;
+    public function searchByCriteria(FoodQuery $foodQuery): array;
 
-    public function findById(IdQuery $id): array;
+    public function findById(IdQuery $idQuery): array;
 }

@@ -12,7 +12,7 @@ final class IdQuery
     {
     }
 
-    public function food(): id
+    public function id(): id
     {
         return $this->id;
     }

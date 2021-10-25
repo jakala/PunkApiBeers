@@ -12,7 +12,7 @@ class Time implements ValueObject
 {
     public const FORMAT = 'Y-m-d';
 
-    public function __construct(private Datetime $time)
+    public function __construct(protected Datetime $time)
     {
     }
 
