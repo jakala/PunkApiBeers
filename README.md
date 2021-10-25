@@ -19,3 +19,5 @@ Se incluye un docker-compose para poder probar directamente la aplicación.
 ## Lista TODO
 - implementar CQRS
 - kernel asincrono (react-php)
+- añadir sistema de respuestas erroneas, para indicar un 'status' => false y el error correspondiente.
+- Testing. No me ha dado tiempo a revisarlo
