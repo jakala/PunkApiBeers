@@ -12,8 +12,23 @@ final class MemoryBeersRepository implements BeersRepository
     public function searchByCriteria(FoodQuery $query): array
     {
         return [
-            ['id' => 1, 'name' => 'Cruzcampo', 'description' => 'una cerveza cruzcampo...'],
-            ['id' => 1, 'name' => 'Amstel', 'description' => 'Amigo Mio Solo Tu Encuentras Leña'],
+            [
+                'id' => 1,
+                'name' => 'Cruzcampo',
+                'description' => 'una cerveza cruzcampo...',
+                'image' => 'http://domain.tld/image1.jpg',
+                'tagline' => 'cerveza, cruzcampo, cerveceros, mundo',
+                'first-brewed' => '2021-01'
+            ],
+            [
+                'id' => 2,
+                'name' => 'Amstel',
+                'description' => 'Amigo Mio Solo Tu Encuentras Leña',
+                'image' => 'http://domain.tld/image2.jpg',
+                'tagline' => 'cerveza, amstel, amigos, leña, camping',
+                'first-brewed' => '2020-01'
+
+            ],
         ];
     }
 }
