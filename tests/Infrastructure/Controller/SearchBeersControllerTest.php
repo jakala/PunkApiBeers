@@ -6,7 +6,6 @@ namespace App\Tests\Infrastructure\Controller;
 
 use App\Application\Command\FoodQuery;
 use App\Application\Handler\SearchBeersHandler;
-use App\Application\Response\BeerList;
 use App\Domain\ValueObject\Food;
 use App\Infrastructure\Controller\SearchBeersController;
 use App\Infrastructure\Service\CreateFoodQueryFromRequest;

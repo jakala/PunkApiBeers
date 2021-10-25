@@ -4,12 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Infrastructure\Controller;
 
-use App\Application\Command\IdQuery;
-use App\Application\Handler\SearchBeerDetailHandler;
-use App\Domain\ValueObject\Id;
 use App\Infrastructure\Controller\HealthCheckController;
-use App\Infrastructure\Controller\ShowBeerDetailController;
-use App\Infrastructure\Service\CreateIdQueryFromRequestId;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
