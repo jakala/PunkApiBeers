@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App\Shared\Domain\ValueObject;
+
 use App\Shared\Domain\Exception\IntegerError;
 use App\Shared\Domain\Interface\ValueObject;
 
