@@ -3,6 +3,11 @@ health-check:
     controller: App\Infrastructure\Controller\HealthCheckController
 
 search-beers:
-    path: /search
+    path: /beers
     controller: App\Infrastructure\Controller\SearchBeersController
+    methods: [GET]
+
+search-beer-detail:
+    path: /beers/{id}
+    controller: App\Infrastructure\Controller\ShowBeerDetailController
     methods: [GET]
