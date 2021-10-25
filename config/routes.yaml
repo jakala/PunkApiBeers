@@ -8,6 +8,6 @@ search-beers:
     methods: [GET]
 
 search-beer-detail:
-    path: /beers/{id}
+    path: /beers/{requestId}
     controller: App\Infrastructure\Controller\ShowBeerDetailController
     methods: [GET]

@@ -6,6 +6,7 @@ namespace App\Shared\Domain\ValueObject;
 
 use App\Shared\Domain\Exception\TimeError;
 use App\Shared\Domain\Interface\ValueObject;
+use DateTime;
 
 class Time implements ValueObject
 {

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Infrastructure\Repository;
 
 use App\Application\Command\FoodQuery;
+use App\Application\Command\IdQuery;
 use App\Domain\Interface\BeersRepository;
 
 final class MemoryBeersRepository implements BeersRepository
@@ -29,6 +30,18 @@ final class MemoryBeersRepository implements BeersRepository
                 'first-brewed' => '2020-01'
 
             ],
+        ];
+    }
+
+    public function findById(IdQuery $id): array
+    {
+        return [
+            'id' => 1,
+            'name' => 'Cruzcampo',
+            'description' => 'una cerveza cruzcampo...',
+            'image' => 'http://domain.tld/image1.jpg',
+            'tagline' => 'cerveza, cruzcampo, cerveceros, mundo',
+            'first-brewed' => '2021-01'
         ];
     }
 }

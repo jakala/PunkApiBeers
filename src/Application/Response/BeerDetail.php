@@ -18,7 +18,7 @@ final class BeerDetail implements \JsonSerializable
             'id' => $this->beer->id()->value(),
             'name' => $this->beer->name()->value(),
             'description' => $this->beer->description()?->value(),
-            'image' => $this->beer->description()?->value(),
+            'image' => $this->beer->image()?->value(),
             'tagline' => $this->beer->tagline()?->value(),
             'first_brewed' => $this->beer->firstBrewed()?->value(),
         ];
