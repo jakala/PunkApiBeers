@@ -13,7 +13,7 @@ final class MemoryBeersRepository implements BeersRepository
     {
         return [
             ['id' => 1, 'name' => 'Cruzcampo', 'description' => 'una cerveza cruzcampo...'],
-            ['id' => 1, 'name' => 'Amstel', 'Description' => 'Amigo Mio Solo Tu Encuentras Leña'],
+            ['id' => 1, 'name' => 'Amstel', 'description' => 'Amigo Mio Solo Tu Encuentras Leña'],
         ];
     }
 }

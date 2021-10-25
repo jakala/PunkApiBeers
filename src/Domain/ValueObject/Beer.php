@@ -10,9 +10,9 @@ final class Beer
         private Id $id,
         private Name $name,
         private Description $description,
-        private Image $image,
-        private Tagline $tagline,
-        private FirstBrewed $firstBrewed
+        private ?Image $image,
+        private ?Tagline $tagline,
+        private ?FirstBrewed $firstBrewed
     ) {
     }
 
@@ -31,17 +31,17 @@ final class Beer
         return $this->description;
     }
 
-    public function image(): Image
+    public function image(): ?Image
     {
         return $this->image;
     }
 
-    public function tagline(): Tagline
+    public function tagline(): ?Tagline
     {
         return $this->tagline;
     }
 
-    public function firstBrewed(): FirstBrewed
+    public function firstBrewed(): ?FirstBrewed
     {
         return $this->firstBrewed;
     }

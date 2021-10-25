@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Application\Service;
+namespace App\Infrastructure\Service;
 
 use App\Application\Command\FoodQuery;
 use App\Domain\ValueObject\Food;
