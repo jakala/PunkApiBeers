@@ -1,6 +1,7 @@
 # PunkApiReader
 Se trata de un ejemplo de uso de Symfony 5 con php8, en el que conectamos a
-una api de ejemplo. En este caso utilizamos [PunkApi](https://punkapi.com/).
+una api de ejemplo. En este caso utilizamos [PunkApi](https://punkapi.com/). 
+Me he basado en un repositorio personal, [symfony5-ddd-skeleton](https://github.com/jakala/symfony5-ddd-skeleton).
 
 Se incluye un docker-compose para poder probar directamente la aplicación.
 
