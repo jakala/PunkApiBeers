@@ -14,6 +14,11 @@ final class BeerList implements \JsonSerializable
 
     public function jsonSerialize(): array
     {
-        return $this->beers;
+        $result = [];
+
+        foreach ($this->beers as $beer) {
+            $result[] = $beer->jsonSerialize();
+        }
+        return $result;
     }
 }
